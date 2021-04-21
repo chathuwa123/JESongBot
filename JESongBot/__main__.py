@@ -1,5 +1,5 @@
-# Infinity BOTs <https://t.me/Infinity_BOTs>
-# @ImJanindu
+# SL Music HuB / Sinhala Songs <https://t.me/sinhalasongsmusic>
+# @SkrillexHCM
 
 from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
 from JESongBot.plugins import *
@@ -13,7 +13,7 @@ Heya [{}](tg://user?id={}), I'm Song Downloader Bot 🎵
 
 Do /help for know my commands
 
-A bot by @Infinity_BOTs
+A bot by @sinhalasongsmusic
 """
 
 help_text = """
@@ -24,7 +24,7 @@ My commands👇
 - /deezer <song name>: download songs via Deezer
 - Send youtube url to my pm for download it on audio format
 
-A bot by @Infinity_BOTs
+A bot by @sinhalasongsmusic
 """
 
 @app.on_message(filters.command("start"))
@@ -37,10 +37,10 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Source", url="https://github.com/ImJanindu/JESongBot"
+                        text="Our Group", url="https://t.me/sinhalasongsmusic"
                     ),
                     InlineKeyboardButton(
-                        text="Dev", url="https://t.me/ImJanindu"
+                        text="Dev", url="https://t.me/skrillexhcm"
                     )
                 ]
             ]
@@ -54,5 +54,5 @@ async def start(client, message):
     await message.reply(help_text)
 
 app.start()
-LOGGER.info("JESongBot is online.")
+LOGGER.info("missjennibot is online.")
 idle()
