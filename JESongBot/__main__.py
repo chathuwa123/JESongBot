@@ -9,11 +9,11 @@ from JESongBot import Jebot as app
 from JESongBot import LOGGER
 
 pm_start_text = """
-Heya [{}](tg://user?id={}), I'm Song Downloader Bot 🎵
+Hey [{}](tg://user?id={}), I'm Music Downloader Bot 🎵
 
 Do /help for know my commands
 
-A bot by @Infinity_BOTs
+A bot by @sinhalasongsmusic
 """
 
 help_text = """
@@ -24,7 +24,7 @@ My commands👇
 - /deezer <song name>: download songs via Deezer
 - Send youtube url to my pm for download it on audio format
 
-A bot by @Infinity_BOTs
+A bot by @sinhalasongsmusic
 """
 
 @app.on_message(filters.command("start"))
@@ -37,10 +37,10 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Source", url="https://github.com/ImJanindu/JESongBot"
+                        text="Channel", url="https://t.me/sinhalamusicsongs"
                     ),
                     InlineKeyboardButton(
-                        text="Dev", url="https://t.me/ImJanindu"
+                        text="group", url="https://t.me/sinhalasongsmusic"
                     )
                 ]
             ]
